@@ -12,5 +12,28 @@ body {
 
 #main-container {
     width: 635px;
+    height: 475;
     margin: 3rem auto 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-container h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+#top-container h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+#top-container p {
+    color: hsl(218, 22%, 67%);
+}
+
+#bottom-container {
+    display: flex;
+    height: 260px;
+    background-color: hsl(179, 62%, 43%);
 }
