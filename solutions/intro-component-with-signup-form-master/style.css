@@ -29,9 +29,12 @@ body {
     align-items: center;
 }
 
+#main-title {
+    font-size: 3rem;
+}
+
 #sign-up-container {
     width: 540px;
-    /* flex-grow: 1; */
 }
 
 #try-free {
@@ -56,7 +59,71 @@ body {
 }
 
 input {
+    border: none;
+    width: 100%;
+    flex-wrap: 1;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+input:active {
+    border: none;
+}
+
+#claim-btn {
+    width: 460px;
+    height: 55px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.input-block {
+    margin-bottom: 20px;
+}
+
+.input-container {
     height: 55px;
     border-radius: 5px;
     border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 24px 0 30px;
+}
+
+.error-msg {
+    text-align: end;
+    color: hsl(0, 100%, 74%);
+    font-size: 0.7rem;
+    display: none;
+}
+
+#agreement {
+    font-size: 0.7rem;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    margin-top: 18px;
+}
+
+#term {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+.input-error-icon {
+    height: 24px;
+    width: 24px;
+    display: none;
 }

@@ -28,11 +28,42 @@
           <p>Try it free 7 days then $20/mo. thereafter</p>
         </div>
         <form id="sign-up-form">
-          <input id="first-name" type="text" placeholder="First Name" />
-          <input type="text" id="last-name" placeholder="Last Name" />
-          <input type="email" id="email" placeholder="Email Address" />
-          <input type="password" id="password" placeholder="Password" />
-          <button id="claim-btn">Claim your free trial</button>
+          
+          <div class="input-block">
+            <div class="input-container">
+              <input id="first-name" type="text" placeholder="First Name" />
+              <img class="input-error-icon" src="./images/icon-error.svg" alt="error-icon">
+            </div>
+            <p id="first-name-error-msg" class="error-msg">First Name cannot be empty</p>  
+          </div>
+          
+          <div class="input-block">
+            <div class="input-container">
+              <input type="text" id="last-name" placeholder="Last Name" />
+              <img class="input-error-icon" src="./images/icon-error.svg" alt="error-icon">
+            </div>
+            <p id="last-name-error-msg" class="error-msg">Last Name cannot be empty</p>  
+          </div>
+
+          <div class="input-block">
+            <div class="input-container">
+              <input type="email" id="email" placeholder="Email Address" />
+              <img class="input-error-icon" src="./images/icon-error.svg" alt="error-icon">
+            </div>
+            <p id="email-error-msg" class="error-msg">Looks like this is not en email</p>  
+          </div>
+          
+          <div class="input-block">
+            <div class="input-container">
+              <input type="password" id="password" placeholder="Password" />
+              <img class="input-error-icon" src="./images/icon-error.svg" alt="error-icon">
+            </div>
+            <p id="password-error-msg" class="error-msg">Password cannot be empty</p>  
+          </div>
+
+          
+          
+          <button id="claim-btn" type="button" onclick="claim_btn()">Claim your free trial</button>
           <p id="agreement">
             By clicking the button, you are agreeing to our
             <span id="term">Terms and Services</span>
